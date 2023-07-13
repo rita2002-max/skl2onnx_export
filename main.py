@@ -19,7 +19,7 @@ def main():
     df = spark.createDataFrame()
 
     # Build your pipeline with multiple entries and export as onnx
-    build_model_pipeline(df, spark)
+    build_model_pipeline(df, 'target', spark)
 
 
 if __name__ == '__main__':
